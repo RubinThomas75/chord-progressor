@@ -1,4 +1,5 @@
 import bs4
+import pickle
 from urllib.request import urlopen as uReq
 from bs4 import BeautifulSoup as soup
 import numpy as np
@@ -38,12 +39,9 @@ def scrape():
 				#now lets find where the chords are
 				chords = page_soup.findAll('u')
 				#iterates over chords and adds everything to a list
-				print("done")
-				"""myList = list()
+				myList = list()
 				for i in chords: 
 					myList.append(i.getText())
-					print(myList)"""
-   
 	#if not i in S CHECKING IF SOMETHIN
 
 
